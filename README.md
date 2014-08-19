@@ -1,4 +1,4 @@
 devfest
 =======
 
-DevFest website
+GDG Beijing DevFest website
