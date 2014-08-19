@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aviators - byaviators.com">
+
+    <link rel="stylesheet" href="assets/js/rs-plugin/css/settings.css" type="text/css">
+    <link rel="stylesheet" href="assets/js/rs-plugin/css/fullwidth.css" type="text/css">    
+
+    <!-- 字体 -->
+    <link href="assets/icons/pictopro-normal/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/icons/pictopro-outline/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap-responsive.css" type="text/css">
+    <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/infine.css" type="text/css">
+
+    <!--[if lt IE 9]>
+       	<link rel="stylesheet" id="ie8-css"  href="assets/css/ie8.css" type="text/css" media="all">
+	<![endif]-->
+
+	<title>北京GDG DevFest 2013</title>
+</head>
+
+<body data-spy="scroll" data-target=".main-navigation">
+
+<div class="navigation">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </a>
+
+                <div class="logo">
+                    <a href="#nav-header" class="roll"><!-- <span class="icon-normal-infinitive logo-icon"></span> --><span>DevFest 2013</span></a>
+                </div><!-- /.logo -->
+
+                <div class="main-navigation nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#nav-header">首页</a></li>
+                        <li><a href="#nav-speakers">演讲嘉宾</a></li>
+                        <li><a href="#nav-schedule">日程安排</a></li>
+                        <li><a href="#nav-about">关于 DevFest</a></li>
+                        <li><a href="#nav-contact">场地信息</a></li>
+                    </ul>
+                </div><!-- /.main-navigation -->
+            </div><!-- /.container -->
+        </div><!-- /.navbar-inner -->
+    </div><!-- /.main-navigation -->
+</div><!-- /.navigation -->
+
+<div id="nav-header" class="header-wrapper">
+    <div class="header">
+
+        <div class="fullwidthbanner-container">         
+           <div class="fullwidthbanner">
+                <ul class="unstyled">
+                    <li class="first-slide" data-transition="fade">
+                        <img src="assets/pictures/background-conference-1.jpg" data-fullwidthcentering="on">
+
+                        <div class="caption sfr caption-main" data-x="center" data-y="200" data-speed="900" data-start="0" data-easing="easeOutBack" fullwidthcentering="on">
+                            <div class="header-item">
+                                <div>
+                                    <h1>2013 北京 DevFest!</h1>
+                                    <h4>[10.26] 北京 Google 开发者社区年度活动，开发者的节日!</h4>
+                                </div><!-- /.title -->
+                            </div><!-- /.header-item -->
+
+                            <div class="countdown wrapper">
+                                <div class="countdown-container">
+                                    <div class="clock row">
+
+                                        <div class="clock-item clock_days countdown-time-value span3">
+                                            <div class="wrap">
+                                                <div class="inner">
+                                                    <div id="canvas_days"></div>
+
+                                                    <div class="text">
+                                                        <p class="val">0</p>
+                                                        <p class="type_days type-time">天</p>
+                                                    </div><!-- /.text -->
+                                                </div><!-- /.inner -->
+                                            </div><!-- /.wrap -->
+                                        </div><!-- /.clock-item -->
+
+                                        <div class="clock-item  clock_hours countdown-time-value span3">
+                                            <div class="wrap">
+                                                <div class="inner">
+                                                    <div id="canvas_hours"></div>
+
+                                                    <div class="text">
+                                                        <p class="val">0</p>
+                                                        <p class="type_hours type-time">小时</p>
+                                                    </div><!-- /.text -->
+                                                </div><!-- /.inner -->
+                                            </div><!-- /.wrap -->
+                                        </div><!-- /.clock-item -->
+
+                                        <div class="clock-item clock_minutes countdown-time-value span3">
+                                            <div class="wrap">
+                                                <div class="inner">
+                                                    <div id="canvas_minutes"></div>
+
+                                                    <div class="text">
+                                                        <p class="val">0</p>
+                                                        <p class="type_minutes type-time">分钟</p>
+                                                    </div><!-- /.text -->
+                                                </div><!-- /.inner -->
+                                            </div><!-- /.wrap -->
+                                        </div><!-- /.clock-item -->
+
+                                        <div class="clock-item clock_seconds countdown-time-value span3">
+                                            <div class="wrap">
+                                                <div class="inner">
+                                                    <div id="canvas_seconds"></div>
+
+                                                    <div class="text">
+                                                        <p class="val">0</p>
+                                                        <p class="type_seconds type-time">秒</p>
+                                                    </div><!-- /.text -->
+                                                </div><!-- /.inner -->
+                                            </div><!-- /.wrap -->
+                                        </div><!-- /.clock-item -->
+                                    </div><!-- /.countdown-container -->
+
+                                    <div class="clock-done">
+                                        <p>活动已开始!</p>
+                                        <a href="#" class="btn btn-primary btn-start">Watch the live stream <i class="icon icon-normal-right-arrow-circle"></i></a>
+                                    </div><!-- /.clock-done -->
+                                </div><!-- /.countdown-container -->
+                            </div><!-- /.countdown -->
+                        </div><!-- /.caption -->
+                    </li>
+
+                    <li class="second-slide" data-transition="fade">
+                        <img src="assets/pictures/background-conference-2.jpg" fullwidthcentering="on">
+
+                        <div class="caption sfr caption-main" data-x="center" data-y="200" data-speed="900" data-start="0" data-easing="easeOutBack">
+                            <div class="header-item">
+                                <div>
+                                    <h1>没赶上 I/O 大会? 参加 DevFest 吧!</h1>
+                                    <h4>强大的讲师阵容，最新的技术分享，Android、Chrome、云计算…</h4>
+                                </div>
+                            </div><!-- /.header-item -->
+
+                            <div>
+                                <img src="assets/img/gdg-devfest-season.png" alt="">
+                            </div>
+                        </div><!-- /.caption -->
+                    </li>     
+
+                    <li class="third-slide" data-transition="fade">
+                        <img src="assets/pictures/background-conference-3.jpg" fullwidthcentering="on">
+
+                        <div class="caption sfr caption-main" data-x="center" data-y="300" data-speed="900" data-start="0" data-easing="easeOutBack">
+                            <div class="header-item">
+                                <div>
+                                    <h1>本次大会<br><br>已经结束</h1>                                    
+                                </div>
+                            </div><!-- /.header-item -->
+                        </div>                     
+
+                        <div class="caption fade" data-x="800" data-y="250" data-speed="100" data-start="0" data-easing="fade">
+                            <div class="last-seats"><a href="#" class="roll" target="_blank"><p>明年再见!</p></a></div>
+                        </div>                        
+                    </li>       
+                </ul><!-- /.revolution -->
+           </div>        
+        </div>
+    </div><!-- /.header -->
+</div><!-- /.header-wrapper -->
+
+<div id="nav-subscribe" class="subscribe-wrapper">
+    <div class="subscribe">
+        <div class="container">
+            <div class="form row">
+                <div class="span8 offset2">
+                    <h4><a class="btn btn-large btn-success" href="https://www.gdgdocs.org/forms/d/1qSDNFXcoNcJ9jkYk425VtFnrDEHe1aL0-0XXhvmfdF0/viewform"  target="_blank"><strong>免费报名</strong></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="btn btn-large btn-danger" href="https://plus.google.com/114116331730392650768/posts"  target="_blank"><strong>关注我们</strong></a></h4>
+                    
+
+
+                </div><!-- /.span8 -->
+            </div><!-- /.form -->
+        </div><!-- /.container -->
+    </div><!-- /.subscribe -->
+</div><!-- /.subscribe-wrapper -->
+
+<div id="nav-features" class="features-wrapper">
+    <div class="features">
+        <div class="features-inner container">
+            <div class="row">
+                <div class="item orange span4">
+                    <div class="row">
+                        <div class="wrapper-icon span1">
+							<div class="background-icon">
+								<i class="icon icon-outline-pointer"></i>
+                            </div><!-- /.background-icon -->
+                        </div><!-- /.wrapper-icon -->
+
+                        <div class="text-wrapper span3 pull-right">
+                            <h3>10场精彩内容</h3>
+
+                            <p class="features-description">
+                                了解最新的 Web & HTML5、Chrome、Android、Google云平台技术。
+                            </p>
+                        </div><!-- /.text-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.item -->
+
+                <div class="item blue span4">
+                    <div class="row">
+                        <div class="wrapper-icon span1">
+							<div class="background-icon">
+								<i class="icon icon-outline-clock"></i>
+                            </div><!-- /.background-icon -->
+                        </div><!-- /.wrapper-icon -->
+
+                        <div class="text-wrapper span3">
+                            <h3>强大讲师阵容</h3>
+
+                            <p class="features-description">来自 Google 员工、谷歌开发者专家（GDE）和国内顶尖技术专家的精彩分享。</p>
+                        </div><!-- /.text-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.item -->
+
+                <div class="item yellow span4">
+                    <div class="row">
+                        <div class="wrapper-icon span1">
+							<div class="background-icon">
+								<i class="icon icon-outline-megaphone"></i>
+							</div><!-- /.background-icon -->
+                        </div><!-- /.wrapper-icon -->
+
+                        <div class="text-wrapper span3">
+                            <h3>Code Lab</h3>
+
+                            <p class="features-description">
+                                现场动手学习
+                            </p>
+                        </div><!-- /.text-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.item -->
+            </div><!-- /.row -->
+        </div><!-- /.features-inner -->
+    </div><!-- /.features -->
+</div><!-- /.features-wrapper -->
+
+<div id="nav-speakers" class="speakers-wrapper">
+    <div class="container">
+        <h2>专家讲师和精彩内容</h2>
+        <h4>Googler、架构师、GDE、优秀开发者，详细内容持续更新中</h4>
+
+        <div class="speakers">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab-1" data-toggle="tab">上午-Keynote</a></li>
+                <li><a href="#tab-2" data-toggle="tab">下午-分会场一</a></li>
+                <li><a href="#tab-3" data-toggle="tab">下午-分会场二</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="tab-1">
+                  
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/speakers/Tony.png" alt="Tony">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">Tony Chan</p>
+                            <p class="company">Google Android 开发者推广人</p>
+                            <p class="talk-title">Android and Google Play</p>
+                            <p class="time"><span class="time-start">10:00</span> - 11:00</p>
+                            <p class="content">
+                            介绍最新 Android 和 Google Play 的最新更新，同时涵盖 Android 开发、设计的最佳实践，以及 Google Play 的发布策略。
+                            </p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>关于 Tony</h4>
+								<p>
+								Tony 在 Google 负责 Android 的推广工作。他于 2007 年加入 Google，帮助开发者解决各种 Google 产品和技术的相关问题，如 Google Checkout, Apps 和 Android 等。
+                </p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/speakers/Bill.jpg" alt="Bill Luan">
+                            </div><!-- /.image-box -->
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">栾跃(Bill Luan)</p>
+                            <p class="company">Google 大中华区开发者关系负责人</p>
+                            <p class="talk-title">各种网络应用的开放技术介绍</p>
+                            <p class="time"><span class="time-start">11:00</span> - 12:00</p>
+                            <p class="content">
+                            </p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>关于 Bill</h4>
+								<p>
+Bill Luan 有是 Google 大中华区开发者关系负责人，精通众多 Google 技术。他是改革开放后第一批赴美留学生，在摩托罗拉和微软等公司从事了二十余年系统工程设计和软件开发管理工作，现负责 Google 开发者关系和技术推广工作。 
+								</p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+                     
+                </div><!-- /.tab-1 -->
+                
+
+                <div class="tab-pane fade" id="tab-2">
+
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/speakers/wenjie.jpg" alt="张文杰">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">张文杰</p>
+                            <p class="company">Intel 资深架构师</p>
+                            <p class="talk-title">WebRTC 技术的实现及拓展应用</p>
+                            <p class="time"><span class="time-start">13:15</span> - 14:05</p>
+                            <p class="content">
+WebRTC 是 W3C 制定的一套 HTML5 实时音视频通信技术标准。本主题覆盖 WebRTC 的技术起源、发展、现状及相关的技术实现细节，同时介绍 Intel 基于 WebRTC 技术的拓展应用服务平台。
+                            </p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>关于张文杰</h4>
+
+								<p>
+Intel亚太研发有限公司资深构架师， 2003年加入Intel从事网络编译器测试优化、项目创新、Web技术优化及应用平台开发工作。有十年以上的软件开发与测试、系统优化、本地项目孵化及创新的经验。
+                                </p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/speakers/alphayang.jpg" alt="杨波">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">Alpha Yang</p>
+                            <p class="company">Google Apps Consultant</p>
+                            <p class="talk-title">Google App Engine & Cloud Overview</p>
+                            <p class="time"><span class="time-start">14:05</span> - 15:00</p>
+                            <p class="content">
+                            介绍 Google App Engine 的最新特性，涵盖整个 Google 云平台的介绍，让你站在云计算的最前沿，一揽众山小。
+                            </p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>关于 Alpha</h4>
+
+								<p>
+Alpha 在 Google Apps 和 Google Cloud Platform 有超过5年的实战经验。在帮助客户使用最新的云端技术提高生产效率的同时，降低投入成本，获得更高的技术投入回报。
+                                </p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3  -->
+                    </div><!-- /.speaker -->
+
+
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/speakers/hanguokai.jpg" alt="韩国恺">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">韩国恺(Jackie)</p>
+                            <p class="company">Google Dart GDE</p>
+                            <p class="talk-title"> Web 的未来 - 新技术和新语言</p>
+                            <p class="time"><span class="time-start">15:15</span> - 16:05</p>
+                            <p class="content">
+                            回顾 Web 技术的历史和当前发展趋势，介绍影响未来 Web 开发的最新技术（Web Component 及 Polymer 库）和 Web 上编程语言的发展历程。
+                            </p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>关于韩国恺</h4>
+
+								<p>
+韩国恺，高级工程师、技术经理，多年开发和管理经验。擅长 Web 前后端技术、网站架构和运维管理，熟悉多种编程语言。做过企业应用和互联网服务等不同类型产品。国内的第一位 Google GDE，北京 GDG 组织者。
+                </p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3  -->
+                    </div><!-- /.speaker -->
+                    
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/speakers/unbug.jpeg" alt="unbug">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">李高禄(unbug)</p>
+                            <p class="company">网易前端开发攻城师,MIHTool作者.</p>
+                            <p class="talk-title">Polymer Code Lab</p>
+                            <p class="time"><span class="time-start">16:05</span> - 17:00</p>
+                            <p class="content">
+                            Polymer 是一个全新的基于 Web Components 基础之上的 Web 库，为 Web 平台上浏览器的演进提供支持。本课程为 Code Lab 形式，即根据准备好的教程动手学习 Polymer 库。听众需自带笔记本。
+                            </p>
+                            <p class="content">
+                            由于会场网络条件有限，请参加 Polymer Code Lab 的参会者做如下准备：<br>
+1.需要python2.7+环境(如何安装<a target="_blank"  href="http://www.python.org/download/">python</a>)或者GAE(<a target="_blank" href="https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python">如何安装Google App Engine</a>),建议两者都部署好.<br>
+2.需要nodeJS环境(<a target="_blank" href="http://nodejs.org/">如何安装nodeJS</a>)和bower(npm install -g bower)<br>
+3.需要Polymer project 源码包, <a target="_blank" href="http://www.polymer-project.org/">最新版下载</a><br>
+4.需要示例项目TodoMVC, <a target="_blank" href="https://github.com/Polymer/todomvc">https://github.com/Polymer/todomvc</a><br>
+5.当然Chrome是必须的                           <br>
+                            </p>                            
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>关于李高禄</h4>
+
+								<p>
+网易前端开发攻城师,MIHTool作者.目前专注移动前端. Twitter: @unbug   微博: @听奏
+                                </p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3  -->
+                    </div><!-- /.speaker -->                    
+                    
+                </div><!-- /.tab-2 -->
+
+                <div class="tab-pane fade" id="tab-3">
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/speakers/zhouaimin.jpg" alt="周爱民">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">周爱民(aimingoo)</p>
+                            <p class="company">豌豆荚架构师</p>
+                            <p class="talk-title">smali 汇编语言的设计与实现</p>
+                            <p class="time"><span class="time-start">13:15</span> - 14:05</p>
+                            <p class="content">
+                            smali 是 .dex 文件反编译生成的汇编代码。也可以直接手写 smali 代码。他是目前唯一能完整实现反编译和再编译的、面向 Dalvik 上的汇编了。您将了解到 smali 与 .dex 和 Dalvik 的关系，以及（最关键的）这个汇编语言的设计与实现。</p>
+                            
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>关于周爱民</h4>
+
+								<p>
+周爱民(Aimingoo)，十余年的软件开发、项目管理、团队建设的经验。前支付宝业务架构师，前盛大网络平台架构师，现任豌豆荚架构师。著有《Delphi源代码分析》、《JavaScript语言精髓与编程实践》、《大道至简》、《大道至易》等专著。目前主要从事软件工程、体系架构和语言基础方面的研究与实践。
+                                </p>
+							</div><!-- /.about -->
+                        </div><!-- /.about -->
+                    </div><!-- /.speaker -->
+
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/speakers/wearable.jpg" alt="">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">国内行业专家+投资人+专业团队</p>
+                            <p class="company"> </p>
+                            <p class="talk-title">圆桌会议：可穿戴式设备的创新与未来</p>
+                            <p class="time"><span class="time-start">14:05</span> - 15:00</p>
+                            <p class="content">嘉宾：<br>
+                              1. 主持人 - 葛涵涛，北京GDG创始人，移动新观察总编<br>
+                              2. 嘉宾 - 栾跃，Google 中国技术推广部负责人<br>
+                              3. 产品团队 - 汪泽其，奋达科技董事/总经理<br>
+                              4. 产品团队 - 杨枫，健安华夏创始人CEO<br>
+                              5. 行业专家 - 关恒，Sony移动高级经理
+                            </p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>关于圆桌会议</h4>
+
+								<p>
+
+                                </p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+                   
+                    
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/speakers/nichao.jpg" alt="倪超">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">倪超(木鱼)</p>
+                            <p class="company">金山网络</p>
+                            <p class="talk-title">Chrome扩展开发(猎豹浏览器12306订票助手) </p>
+                            <p class="time"><span class="time-start">15:15</span> - 16:05</p>
+                            <p class="content">
+                           去年春运期间，一款浏览器的订票助手备受大众关注，一不小心还拖垮了 Github 。12306订票网站助手是使用是 Chrome 和 Firefox 上提供的扩展机制。由浏览器提供脚本扩展入口，将自身的脚本注入到12306订票网站内，从而完成定制界面和功能的使命。
+                            </p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>关于倪超</h4>
+
+								<p>
+倪超（网名木鱼）互联网从业六年，长期从事互联网应用以及企业ERP应用领域开发。07 至13年就职于一商业地产企业主持ERP系统中自有系统的开发建设，目前加入金山网络。
+                                </p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3  -->
+                    </div><!-- /.speaker -->
+                    
+                    
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/speakers/yechenguang.jpg" alt="叶晨光">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">叶晨光</p>
+                            <p class="company">北京帕罗奥图科技有限公司创始人&CEO</p>
+                            <p class="talk-title">以Google Class为代表的穿戴式未来</p>
+                            <p class="time"><span class="time-start">16:05</span> - 16:50</p>
+                            <p class="content">
+                           谷歌X LAB多年前开始研究人类继手机终端之后的新的高科未来，通过在人本身介质上加强和五官的直接接触。以谷歌眼镜为代表的穿戴式和头戴式智能设备，更方便的人类通讯、更易完成人机交互、加深人与人本体之间的信息交流。目前谷歌眼镜名为拓展现实虚拟成像投射眼镜，以协助人类更好的识别周边环境、促进更多信息互动，通过智能眼镜为终端完成未来的物联网链接，使人们生活在足够信息量的环境当中。
+                            </p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>关于叶晨光</h4>
+
+								<p>
+通信、传媒行业背景，穿戴式设备研究者，移动互联网分析师。从业并服务过诺基亚、谷歌youtube等通信和互联网公司，目前初创穿戴式研发公司AltoTech，对未来穿戴设备特别是头戴式做研究，包括人脸识别、AR现实增强等技术。
+                                </p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3  -->
+                    </div><!-- /.speaker -->                    
+ 
+                     <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/speakers/zhaoyu.jpg" alt="赵宇">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">赵宇</p>
+                            <p class="company">梆梆安全 VP</p>
+                            <p class="talk-title">安卓应用的安全保护</p>
+                            <p class="time"><span class="time-start">16:50</span> - 17:25</p>
+                            <p class="content">
+              随着移动互联网的爆发式增大，移动应用市场也越来越火爆，在移动应用市场繁荣的背后，安全问题也日趋严重， 目前市场上60%以上的APP都是被篡改过的，很多开发者开发的应用被二次打包或被塞进很多广告，如何从技术上保护开发者APP的安全？是目前很多开发者面临的问题。
+                            </p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>关于赵宇</h4>
+
+								<p>
+梆梆安全联合创始人&副总裁。中国科学院硕士，有超过8年的增值业务提供商的运营和管理工作经验，曾就职于 万向通信、保利通信等公司。
+                                </p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3  -->
+                    </div><!-- /.speaker -->                    
+                    
+                </div><!-- /.tab-3 -->
+            </div><!-- /.tab-content -->
+        </div><!-- /.speakers -->
+    </div><!-- /.container -->
+</div><!-- /.speakers-wrapper -->
+
+<div class="parallax-wrapper parallax-first">
+	<div class="parallax">
+		<div class="inner">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<span class="parallax-title">精彩不容错过</span>
+					</div><!-- /.span12 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.inner -->
+	</div><!-- /.parallax -->
+</div><!-- /.parallax-wrapper -->
+
+<div id="nav-schedule" class="pricing-wrapper">
+    <div class="pricing">
+        <div class="pricing-inner">
+			<div class="container has-options">
+				<h2>日程安排</h2>
+				<br><br>
+				
+				<div class="row">
+				  <div class="span1"></div>
+				  <div class="span10">
+            <table class="table table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th colspan="2">时间</th>
+                  <th colspan="2">内容</th>
+                <tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="10">上午</td>
+                  <td></td>
+                  <td colspan="2">主会场</td>
+                <tr>              
+                <tr>
+                  <td>09:00 - 10:00</td>
+                  <td colspan="2">签到入场 + 开场表演</td>
+                <tr>
+                <tr>
+                  <td>10:00 - 10:10</td>
+                  <td colspan="2">开场介绍</td>
+                <tr>
+                <tr>
+                  <td>10:10 - 11:05</td>
+                  <td colspan="2">Android and Google Play - Tony Chan</td>
+                <tr>
+                <tr>
+                  <td>11:05 - 12:00</td>
+                  <td colspan="2">网络应用的开放技术介绍 - Bill Luan   <a target="_blank" href="ppt/Web_Technologies_BillLuan.pdf">讲义下载</a></td>
+                <tr>                
+                <tr>
+                  <td>中午</td>
+                  <td>12:00 - 13:15</td>
+                  <td colspan="2">午餐 & 休息</td>
+                <tr>
+                <tr>
+                  <td rowspan="16">下午</td>
+                  <td></td>
+                  <td>分会场一</td>
+                  <td>分会场二</td>
+                <tr>                
+                <tr>
+                  <td>13:15 - 14:05</td>
+                  <td>WebRTC 技术的实现及拓展应用 - 张文杰   <a target="_blank" href="ppt/WebRTC_%E5%BC%A0%E6%96%87%E6%9D%B0.pdf">讲义下载</a></td>
+                  <td>smali 汇编语言的设计与实现 - 周爱民   <a target="_blank" href="ppt/Smali%E8%AF%AD%E8%A8%80%E7%9A%84%E8%AE%BE%E8%AE%A1_%E5%91%A8%E7%88%B1%E6%B0%91.ppt">讲义下载</a></td>
+                <tr>
+                <tr>
+                  <td>14:05 - 15:00</td>
+                  <td>Google App Engine & Cloud Overview - 杨波   <a target="_blank" href="ppt/Google%E4%BA%91%E5%B9%B3%E5%8F%B0_%E6%9D%A8%E6%B3%A2.pdf">讲义下载</a></td>
+                  <td>圆桌会议：可穿戴式设备的创新与未来</td>
+                <tr>                
+                <tr>
+                  <td>15:00 - 15:15</td>
+                  <td colspan="2">茶歇</td>
+                <tr>
+                <tr>
+                  <td>15:15 - 16:05</td>
+                  <td>Web 的未来：新技术和新语言 - 韩国恺   <a target="_blank" href="ppt/Web%E7%9A%84%E6%9C%AA%E6%9D%A5_%E6%96%B0%E8%AF%AD%E8%A8%80%E5%92%8C%E6%96%B0%E6%8A%80%E6%9C%AF_%E9%9F%A9%E5%9B%BD%E6%81%BA.pdf">讲义下载</a></td>
+                  <td>Chrome扩展：猎豹浏览器12306订票助手 - 倪超   <a target="_blank" href="ppt/%E2%BC%88%E4%BA%BA%E9%83%BD%E6%9D%A5%E7%8E%A912306_%E5%80%AA%E8%B6%85.pptx">讲义下载</a></td>
+                <tr>
+                <tr>
+                  <td rowspan="4">16:05 - 17:30</td>
+                  <td rowspan="4">Polymer Code Lab - 李高禄   <a target="_blank" href="ppt/Polymer_%E6%9D%8E%E9%AB%98%E7%A6%84.pptx">讲义下载</a></td>
+                  <td>以Google Class为代表的穿戴式未来 - 叶晨光   <a target="_blank" href="ppt/Google_Glass_%E5%8F%B6%E6%99%A8%E5%85%89.pptx">讲义下载</a></td>
+                <tr>         
+                <tr>
+                  <td>安卓应用的安全保护 - 赵宇   <a target="_blank" href="ppt/%E6%A2%86%E6%A2%86%E4%BF%9D%E6%8A%A4%E4%BD%A0%E7%9A%84APP_%E8%B5%B5%E5%AE%87.pptx">讲义下载</a></td>
+                <tr>                          
+                <tr>
+                  <td>17:30 - 18:00</td>
+                  <td colspan="2">合影 & 活动结束   <a target="_blank" href="ppt/2013BeijingDevFest.zip">所有讲义打包下载</a></td>
+                <tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="span1"></div>  
+        </div>
+        
+			</div>
+        </div><!-- /.pricing-inner -->
+    </div>
+</div><!-- /.pricing-wrapper -->
+
+
+<div id="nav-about" class="testimonials-wrapper">
+    <div class="testimonials">
+		<div class="container">
+		    <h2>关于 DevFest 和 GDG</h2>
+
+			<div class="cycle-slideshow-vertical" data-cycle-swipe="true">                
+				<div class="slide">
+					<div class="container">
+						<div class="testimonials-inner">
+							<div class="span2 testimonials-image item">
+								<img class="testimonials-image-box" src="assets/img/devfest.png" alt="">
+							</div><!-- /.testimonials-image -->
+
+							<blockquote class="span6 item"><p>GDG <a href="https://developers.google.com/events/devfest/" target="_blank">DevFests</a> 是一个由社区运作的大型开发者活动，包含多种产品、技术的讲座和 Code Lab 等活动形式。<a href="https://developers.google.com/events/devfest/map"  target="_blank">查看全球所有 DevFest 活动地图</a></p>
+								
+							</blockquote>
+						</div><!-- /.testimonials-inner -->
+					</div><!-- /.container -->
+				</div><!-- /.slide -->
+
+				<div class="slide">
+					<div class="container">
+						<div class="testimonials-inner">
+							<div class="span2 testimonials-image item">
+								<img class="testimonials-image-box" src="assets/img/gdg-logo.png" alt="">
+							</div><!-- /.testimonials-image -->
+
+							<blockquote class="span6 item"><p>Google Developer Groups (<a href="https://developers.google.com/groups/" target="_blank">GDG</a>) 是面向对 Google 技术感兴趣的开发者社区，涵盖Google各种平台、产品以及各种开源、开放技术。</p>
+								
+							</blockquote>
+						</div><!-- /.testimonials-inner -->
+					</div><!-- /.container -->
+				</div><!-- /.slide -->                
+			</div><!-- /.cycle-slideshow-vertical -->
+
+            <div class="cycle-pager cycle-vertical-pager"></div>
+		</div><!-- /.container -->
+    </div><!-- /.testimonials -->
+</div><!-- /.testimonials-wrapper -->
+
+<hr>
+
+<div class="container">
+    <h2 class="page-header">北京GDG 常规活动同样精彩</h2>
+
+    <ul class="thumbnails">
+        <li class="span4">
+            <div class="thumbnail">
+                <a href="assets/pictures/1@2x.jpg">
+                    <img src="assets/pictures/1.jpg" alt="">
+                </a>
+                <h3>编程语言沙龙</h3>
+            </div><!-- /.thumbnail -->
+        </li><!-- /.span3 -->
+
+        <li class="span4">
+            <div class="thumbnail">
+                <a href="assets/pictures/2@2x.jpg">
+                    <img src="assets/pictures/2.jpg" alt="">
+                </a>
+                <h3>Chrome 分享</h3>
+            </div><!-- /.thumbnail -->
+        </li><!-- /.span3 -->
+
+        <li class="span4">
+            <div class="thumbnail">
+                <a href="assets/pictures/3@2x.jpg">
+                    <img src="assets/pictures/3.jpg" alt="">
+                </a>
+                <h3>Linux 分享</h3>
+            </div><!-- /.thumbnail -->
+        </li><!-- /.span3 -->
+
+    </ul><!-- /.thumbnails -->
+</div><!-- /.container -->
+
+<div class="our-partners-wrapper">
+    <div class="our-partners container">
+        <div class="our-partners-inner">
+            <h2>感谢 Google 的大力支持</h2>
+
+            <div class="row">
+                <div class="span12 center">
+                    <a href="https://developers.google.com/" target="_blank"><img class="our-partners-logo" src="assets/img/GoogleLogo.jpg" alt="Google Developer"></a>                
+                </div><!-- /.span3 -->           
+
+            </div><!-- /.row -->
+        </div><!-- /.our-partners-inner -->
+    </div><!-- /.our-partners -->
+</div><!-- /.our-partners-wrapper -->
+
+
+<div class="our-partners-wrapper">
+    <div class="our-partners container">
+        <div class="our-partners-inner">
+            <h2>合作媒体</h2>
+
+            <div class="row">
+
+                <div class="span3 center">
+                  <a href="http://www.guao.hk/" target="_blank"><img class="our-partners-logo" src="assets/media/guao_logo_white.jpg" alt="谷奥"></a>
+                </div><!-- /.span3 -->
+
+                <div class="span3 center">
+                  <a href="http://www.infoq.com/cn/" target="_blank"><img class="our-partners-logo" src="assets/media/InfoQ.jpg" alt="InfoQ"></a>
+                </div><!-- /.span3 -->
+
+                <div class="span3 center">
+                    <a href="http://shijue.me/home" target="_blank"><img class="our-partners-logo" src="assets/media/shijue.jpg" alt="视觉中国"></a>                
+                </div><!-- /.span3 -->
+                
+                <div class="span3 center">
+                    <a href="http://www.ccidreport.com/" target="_blank"><img class="our-partners-logo" src="assets/media/CCID.png" alt="CCID情报中心"></a>      
+                </div><!-- /.span3 -->                
+
+            </div><!-- /.row -->
+            <div class="row">
+
+                <div class="span3 center">
+                  <a href="http://www.36kr.com/" target="_blank"><img class="our-partners-logo" src="assets/media/36kr.png" alt="36氪"></a>
+                </div><!-- /.span3 -->
+
+                <div class="span3 center">
+                    <a href="http://mobile.csdn.net/" target="_blank"><img class="our-partners-logo" src="assets/media/csdn.png" alt="CSDN移动频道"></a>                
+                </div><!-- /.span3 -->
+                
+                <div class="span3 center">
+                    <a href="http://it.sohu.com/" target="_blank"><img class="our-partners-logo" src="assets/media/sohu.jpg" alt="Sohu IT"></a>      
+                </div><!-- /.span3 -->                
+
+                <div class="span3 center">
+                  <a href="http://www.mobiletmt.com/" target="_blank"><img class="our-partners-logo" src="assets/media/ydxgc.jpg" alt="移动新观察"></a>
+                </div><!-- /.span3 -->
+
+            </div><!-- /.row -->            
+        </div><!-- /.our-partners-inner -->
+    </div><!-- /.our-partners -->
+</div><!-- /.our-partners-wrapper -->
+
+<div id="nav-contact" class="footer-wrapper">
+    <div class="footer container">
+        <div class="footer-inner">
+            <div class="row">
+                <div class="item span5">
+                    <h2>场地信息</h2>
+
+                    <address>
+                        <i class="icon icon-normal-clock"></i><span class="title">2013年10月26日, 9:00-18:00</span>
+                    </address>
+                    
+                    <address>
+                        <i class="icon icon-normal-pointer"></i><span class="title"><strong>大会地址</strong></span>
+
+                        <p>北京市西城区复兴门外大街真武庙路1号</p>
+
+                        <p>中国职工之家B座3楼多功能厅</p>
+                    </address>
+
+
+                    
+
+                    <address>
+                        <i class="icon icon-normal-train"></i><span class="title"><strong>乘车路线</strong></span>
+
+                        <p>路线一：地铁南礼士路西南口出（D口），往西走1站地的距离，大约8分钟可以到达会场。</p>
+                        <p>路线二：地铁军事博物馆东南口出（C口），乘坐 1路公交车，经过2站到达“工会大楼”站。</p>
+                    </address>                    
+                    
+                </div><!-- /.item -->
+
+                <div class="item span7">
+                    
+                    <div id="map" style="margin-top: 30px;">
+<iframe width="625" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://ditu.google.cn/maps?f=q&amp;source=s_q&amp;hl=zh-CN&amp;geocode=&amp;q=%E5%8C%97%E4%BA%AC%E5%B8%82%E8%A5%BF%E5%9F%8E%E5%8C%BA%E5%A4%8D%E5%85%B4%E9%97%A8%E5%A4%96%E5%A4%A7%E8%A1%97%E7%9C%9F%E6%AD%A6%E5%BA%99%E8%B7%AF1%E5%8F%B7+%E4%B8%AD%E5%9B%BD%E8%81%8C%E5%B7%A5%E4%B9%8B%E5%AE%B6%E5%A4%9A%E5%8A%9F%E8%83%BD%E5%8E%85&amp;aq=&amp;sll=35.86166,104.195397&amp;sspn=61.281992,135.263672&amp;brcurrent=3,0x35f0527051bb7ad5:0x5e391da91fa5cfaf,0,0x35f0525303f10153:0x6b772a2a053ba4a0%3B5,0,0&amp;ie=UTF8&amp;hq=%E5%A4%96%E5%A4%A7%E8%A1%97%E7%9C%9F%E6%AD%A6%E5%BA%99%E8%B7%AF1%E5%8F%B7+%E4%B8%AD%E5%9B%BD%E8%81%8C%E5%B7%A5%E4%B9%8B%E5%AE%B6%E5%A4%9A%E5%8A%9F%E8%83%BD%E5%8E%85&amp;hnear=%E5%8C%97%E4%BA%AC%E5%B8%82%E8%A5%BF%E5%9F%8E%E5%8C%BA%E5%A4%8D%E5%85%B4%E9%97%A8&amp;t=m&amp;ll=39.906477,116.348391&amp;spn=0.006584,0.013411&amp;z=16&amp;output=embed"></iframe>
+
+                    <address>
+                        <i class="icon icon-normal-map-pointer"></i>
+                        <a target="_blank" class="btn btn-grey" href="http://ditu.google.cn/maps?q=%E5%8C%97%E4%BA%AC%E5%B8%82%E8%A5%BF%E5%9F%8E%E5%8C%BA%E7%9C%9F%E6%AD%A6%E5%BA%99%E8%B7%AF1%E5%8F%B7%E4%B8%AD%E5%9B%BD%E8%81%8C%E5%B7%A5%E4%B9%8B%E5%AE%B6&hl=zh-CN&ie=UTF8&sll=39.929389,116.370029&sspn=0.116366,0.264187&brcurrent=3,0x35f05211e2719b05:0x89a1704024ee3a51,0,0x35f0525303f10153:0x6b772a2a053ba4a0%3B5,0,0&hq=%E8%81%8C%E5%B7%A5%E4%B9%8B%E5%AE%B6&hnear=%E5%8C%97%E4%BA%AC%E5%B8%82%E8%A5%BF%E5%9F%8E%E5%8C%BA%E7%9C%9F%E6%AD%A6%E5%BA%99%E8%B7%AF1%E5%8F%B7&t=m&z=17">
+                        Show on Google
+                        maps</a>
+                    </address>
+                    </div><!-- /#map -->
+                </div><!-- /.item -->
+            </div><!-- /.row -->
+        </div><!-- /.footer-inner -->
+    </div><!-- /.footer -->
+
+    
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="copyright span9">
+                    &copy; 2013 Copyright by <a href="http://www.chinagdg.com/forum-2-1.html" class=""  target="_blank">北京谷歌开发者社区</a> <a class="btn btn-grey" href="https://plus.google.com/114116331730392650768/posts"  target="_blank"><strong>加入我们</strong></a>
+                </div><!-- /.copyright -->
+
+                <div class="icons">
+                    <a href="https://plus.google.com/114116331730392650768/posts" class="social-icon" target="_blank"><img src="assets/icons/gplus.jpg" alt=""></a>
+                    <a href="http://weibo.com/gtug" class="social-icon" target="_blank"><img src="assets/icons/weibo.png" alt=""></a>
+                </div><!-- /.icons -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div><!-- /.footer bottom -->
+</div><!-- /.footer-wrapper -->
+
+
+<script type="text/javascript" src="assets/js/retina.js"></script>
+<script type="text/javascript" src="assets/js/kinetic.js"></script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/placeholder.js"></script>
+<script type="text/javascript" src="assets/js/countdown.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.center.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.scrollVert.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.caption2.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="assets/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="assets/fancybox/helpers/jquery.fancybox-media.js"></script>
+<script type="text/javascript" src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="assets/js/infine.js"></script>
+
+</body>
+</html>
